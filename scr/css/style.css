@@ -32,6 +32,9 @@ header nav {
     border-right: 2px dotted black;
     padding-right: 28px;
 }
+.container .menu_item:last-child{
+    border-right: none;
+}
 .subheader{
     margin-top: 53px;
     position: absolute;
