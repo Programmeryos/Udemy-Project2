@@ -1,0 +1,112 @@
+@media (max-width: 1200px){
+    .menu{
+        .menu_item{
+            padding-right: 11px;
+        }
+        .menu_link{
+            font-size: 12px;
+        }
+    }
+    .subheader{
+        margin-top: 52px;
+        .subheader_text{
+            font-size: 12px;
+        }
+        .subheader_phone{
+            font-size: 21px;
+        }
+
+    }
+    .promo{
+        &_header{
+            font-size: 41px;
+            padding-bottom: 20px;
+        }
+        &_subheader{
+            padding-bottom: 10px;
+            font-size: 26px;
+        }
+        &_btn{
+            margin: 50px auto 0 auto;
+        }
+    }
+    .benefits{
+        &_section{
+            flex-direction: column;
+            align-items: center;
+        }
+        &_text{
+            margin-top: 20px;
+            width: 315px;
+        }
+    }
+    .mobile{
+        .title_subheader{
+            font-size: 16px;
+        }
+        &_item{
+            width: 290px;
+        }
+    }
+    .footer{
+        &_links{
+            img{
+                width: 200px;
+            }
+        }
+    }   
+}
+@media (max-width: 921px){
+    .promo{
+        &_btn{
+            height: 55px;
+            margin-top: 100px;
+        }
+    }
+    .car{
+        img{
+            width:700px
+        }
+    }
+    header{
+        nav{
+            padding: 15px 0;
+            .menu{
+                .menu_link{
+                    font-size: 10px;
+                }
+            }
+        }
+        .subheader{
+            &_logo{
+                img{
+                    width: 100%;
+                }
+            }
+            .subheader_phone{
+                font-size: 20px;
+            }
+            .subheader_text{
+                font-size: 12px;
+            }
+        }
+    }
+    .footer{
+        &_wrapper_1{
+            width: 250px;
+            a{
+                font-size: 11px;
+            }
+        }
+        &_wrapper_2{
+            width: 250px;
+            &_menu_2{
+                flex-wrap: wrap;
+                justify-content: center;
+                a{
+                    padding-right: 10px;
+                }
+            }
+        }
+    }
+}
