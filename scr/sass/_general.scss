@@ -1,21 +1,20 @@
-.container {
-	width: 1140px;
-	.menu {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		list-style: none;
-		margin: 0;
-	}
-	.menu_link {
+.menu {
+	display: flex;
+	justify-content: space-between;
+	list-style: none;
+	margin: 0;
+	&_link{
 		font-family: 'Roboto-Light';
 		font-style: normal;
 		font-weight: 300;
 		font-size: 15px;
 		color: white;
 		text-decoration: none;
+		&_hover{
+			text-decoration: none;
+		}
 	}
-	.menu_item {
+	&_link{
 		border-right: 2px dotted black;
 		padding-right: 28px;
 		&:last-child {
@@ -23,7 +22,14 @@
 		}
 	}
 }
+.hamburger{
+	display: none;
+}
+
 header {
+	.container{
+		position: relative;
+	}
 	position: relative;
 	height: 53px;
 	nav {
@@ -42,12 +48,12 @@ header {
 	min-height: 84px;
 	background: rgba(0, 0, 0, 0.6);
 	mix-blend-mode: normal;
-	.subheader_logo {
+	&_logo {
 		display: block;
 		margin-top: 16px;
 		max-width: 100%;
 	}
-	.subheader_text {
+	&_text {
 		margin-top: 6px;
 		font-family: 'Roboto-Light';
 		font-style: normal;
@@ -55,7 +61,7 @@ header {
 		font-size: 13px;
 		color: white;
 	}
-	.subheader_call {
+	&_call {
 		margin-top: 22px;
 		font-family: 'Roboto-Light';
 		font-style: normal;
@@ -64,7 +70,7 @@ header {
 		color: white;
 		text-align: right;
 	}
-	.subheader_phone {
+	&_phone {
 		display: block;
 		margin-top: 0;
 		font-family: Roboto;
@@ -213,7 +219,7 @@ header {
 	min-height: 864px;
 	background: url(../img/opportunities-img/mobile_bg.png);
 	padding: 58px 0 72px 0;
-	.title_header {
+	&_header {
 		margin-top: 32px;
 		font-family: Roboto;
 		font-style: normal;
@@ -223,7 +229,7 @@ header {
 		text-transform: uppercase;
 		color: black;
 	}
-	.title_subheader {
+	&_subheader {
 		font-family: Roboto;
 		font-style: normal;
 		font-weight: normal;
@@ -231,6 +237,21 @@ header {
 		line-height: 21px;
 		text-align: center;
 		color: #222222;
+	}
+	&_title{
+		display: block;
+		margin: 0 auto;
+		padding: 5px 0 0 0;
+		text-align: center;
+		width: 112px;
+		height: 24px;
+		font-family: Roboto-Light;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 11px;
+		background-color: black;
+		color: white;
+		text-transform: uppercase;
 	}
     .row{
         margin-top: 32px;
@@ -326,75 +347,74 @@ header {
 /*section car*/
 
 .car{
-	padding: 55px 0 137px 0;
-	min-height: 900px;
+	padding: 57px 0 137px 0;
 	position: relative;
+	min-height: 899px;
+	background: url(../img/car-img/bg.png);
 	&_wrapper1{
+		position: absolute ;
+		top: 0;
+		left: 0;
+		height: 499px;
 		width: 100%;
-		position: absolute;
-		min-height: 500px;
-		background-color: #000000;
-		bottom:400px;
+		background-color: #070716;
+		z-index: 1;
 	}
-	.container{
+	&_micro-header{
 		position: relative;
-	}
-	&_wrapper2{
-		width: 100%;
-		position: absolute;
-		min-height: 400px;
-		background:url(../img/car-img/bg.png);
-		z-index: 0;
-		top: 500px;
-	}
-	&_title{
-		display: block;
 		margin: 0 auto;
-		padding: 5px 0 0 0;
-		text-align: center;
-		width: 112px;
 		height: 24px;
-		font-family: Roboto-Light;
-		font-style: normal;
-		font-weight: normal;
+		width: 112px;
+		padding: 5px 12px;
+		background-color: #fff;
+		color: #ffffff;
 		font-size: 11px;
-		background-color: white;
-		color: black;
+		font-weight: 300;
 		text-transform: uppercase;
+		text-align: center;
+		z-index: 2;
+		color:black;
 	}
 	&_header{
-		margin-top: 32px;
+		margin-top: 25px;
+		position: relative;
 		font-family: Roboto;
 		font-style: normal;
 		font-weight: bold;
 		font-size: 38px;
 		text-align: center;
-		text-transform: uppercase;
 		color: white;
+		text-transform: uppercase;
+		z-index: 2;
 	}
 	&_subheader{
+		position: relative;
+		margin-top: 2px;
 		font-family: Roboto;
 		font-style: normal;
 		font-weight: normal;
 		font-size: 17px;
-		line-height: 21px;
-		text-align: center;
 		color: white;
+		z-index: 2;
+		text-align: center;
 	}
-	&_img{
+	img{
+		margin-top: 54px;
+		position: relative;
 		display: block;
 		margin: 0 auto;
-		margin-top: 54px;
-
+		z-index:2;
 	}
-	&_text{
+	&_descr{
+		margin-top: 23px;
+		position: relative;
 		font-family: Roboto-Light;
 		font-style: normal;
 		font-weight: 300;
 		font-size: 17px;
 		text-align: center;
-		color: #222222;
 	}
+
 }
 
 /*--------------*/
@@ -634,4 +654,13 @@ header {
 			color:white;
 		}
 	}
+}
+.xs_visible{
+	display: none;
+}
+.s_hidden{
+	display: none;
+}
+.footer_hidden{
+	display: none;
 }
