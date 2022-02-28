@@ -10,16 +10,14 @@
 		font-size: 15px;
 		color: white;
 		text-decoration: none;
+		border-right: 2px dotted black;
+		padding-right: 28px;
 		&_hover{
 			text-decoration: none;
 		}
 	}
-	&_link{
-		border-right: 2px dotted black;
-		padding-right: 28px;
-		&:last-child {
-			border-right: none;
-		}
+	&_link_last{
+		border-right: none;
 	}
 }
 .hamburger{
@@ -35,7 +33,7 @@ header {
 	nav {
 		background: #212121;
 		padding-left: 70px;
-		padding: 14px 0;
+		padding: 15px 0;
 		position: fixed;
 		width: 100%;
 		z-index: 1;
@@ -655,7 +653,7 @@ header {
 		}
 	}
 }
-.xs_visible{
+.xs_hidden{
 	display: none;
 }
 .s_hidden{
